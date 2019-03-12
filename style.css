@@ -9,3 +9,7 @@ License URI:
 Text Domain: canada
 Tags:
 */
+
+body {
+    background-color: gray;
+}
