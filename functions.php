@@ -5,7 +5,6 @@ if ( ! function_exists( 'canada_setup' )) :
         load_textdomain( 'canada', get_template_directory() . '/languages' );
         add_theme_support( 'automatic-feed-links' );
         add_theme_support( 'title-tag' );
-        
         add_theme_support( 'post-thumbnails' );
         set_post_thumbnail_size( 150, 150 );
         register_nav_menus( array(
