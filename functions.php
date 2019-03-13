@@ -36,6 +36,33 @@ if ( ! function_exists( 'canada_setup' )) :
         add_theme_support( 'editor-styles' );
         add_theme_support( 'style-editor.css' );
         add_theme_support( 'responsive-embeds' );
+
+        add_theme_support( 'editor-font-sizes', array(
+            array(
+                'name' => __( 'Small', 'canada' ),
+                'shortName' => __( 'S', 'canada' ),
+                'size' => 19.5,
+                'slug' => 'small'
+            ),
+            array(
+                'name' => __( 'Normal', 'canada' ),
+                'shortName' => __( 'M', 'canada' ),
+                'size' => 22,
+                'slug' => 'normal'
+            ),
+            array(
+                'name' => __( 'Large', 'canada' ),
+                'shortName' => __( 'L', 'canada' ),
+                'size' => 36.5,
+                'slug' => 'large'
+            ),
+            array(
+                'name' => __( 'Huge', 'canada' ),
+                'shortName' => __( 'XL', 'canada' ),
+                'size' => 49.5,
+                'slug' => 'huge'
+            ),
+        ));
     }
 endif;
 add_action( 'after_theme_setup', 'canada_setup' );
