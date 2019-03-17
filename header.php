@@ -12,7 +12,7 @@
             <a class="skip-links screen-reader-text" href="#content"><?php _e( 'Skip to content', 'canada' ) ?></a>
 
             <header id="masthead" class="site-header">
-                <h1>Header Content</h1>
+                <h1><a href="<?php echo esc_url( home_url( '/' ) );  ?>"><?php bloginfo( 'title' ); ?></a></h1>
             </header><!-- /#masthead /.site-header -->
 
             <div id="content" class="site-content">
